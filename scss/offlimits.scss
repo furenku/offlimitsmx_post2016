@@ -1,0 +1,15 @@
+@debug "compilando estilos Off Limits...";
+
+// personalización del plugin Recent Facebook Posts
+
+.recent-facebook-posts {
+   div {
+      height: auto !important;
+   }
+}
+
+iframe {
+   width: 100%;
+}
+
+@debug "estilos Off Limits listos!";
