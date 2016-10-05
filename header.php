@@ -22,7 +22,7 @@
 
    <!--  meta tags -->
 
-   <header class="row expanded h-0 m-0 p-0" data-sticky-container>
+   <header class="row expanded h-10-v m-0 p-0" data-sticky-container>
 
 
       <div class="sticky columns h-10-v color-black-bg " data-sticky data-anchor="contenedor-sitio" data-margin-top="0" data-sticky-on="small">

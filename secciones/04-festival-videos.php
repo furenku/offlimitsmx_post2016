@@ -1,6 +1,6 @@
-<h2>Videos</h2>
 
-<section id="festival2016-videos" class="columns h-a p-0">
+<section id="festival2016-videos" class="columns h-a p-0 m-t-2">
+   <h2>Video</h2>
    <?php
    $q = new WP_Query(
       array(
@@ -10,38 +10,40 @@
          // 'orderby'=>'menu_order', 'order' => 'ASC'
       )
    );
-
-   if( $q->have_posts() ) {
-      while ( $q->have_posts() ) {
-         $q->the_post();
-
-         ?>
-
-         <article id="festival2016-video-<?php echo get_the_ID(); ?>" class="video columns medium-6 large-4 h-40-v end rel imgfx1 p-0">
-
-            <!-- <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100 p-0"> -->
-
-               <div class="titulo columns h-10 text-center white font-xl font2 txsh1">
-
-                     <?php echo get_the_title(); ?>
-
-               </div>
-               <div class="contenido columns h-90 text-center white font-xl font2 txsh1">
-
-                     <?php # echo get_the_content(); ?>
-
-               </div>
-
-            <!-- </a> -->
-
-         </article>
-
-         <?php
-
-      }
-   }
-
    ?>
 
+   <div id="festival2016-videos-listado" class="columns h-30-v h-50-sm-v m-t-2">
+
+      <?php
+
+      if( $q->have_posts() ) {
+         while ( $q->have_posts() ) {
+            $q->the_post();
+
+            ?>
+
+            <article id="festival2016-video-<?php echo get_the_ID(); ?>" class="video columns small-6 medium-4 large-3 h-30-v end rel imgfx1 p-0">
+
+               <!-- <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100 p-0"> -->
+
+                  <div class="titulo columns h-30 text-center white font-xs-s font-md-m font2 txsh1">
+                     <?php echo get_the_title(); ?>
+                  </div>
+                  <div class="contenido columns h-70 text-center white font-xl font2 txsh1">
+                     <?php echo get_the_content(); ?>
+                  </div>
+
+               <!-- </a> -->
+
+            </article>
+
+            <?php
+
+         }
+      }
+
+      ?>
+
+   </div>
 
 </section>

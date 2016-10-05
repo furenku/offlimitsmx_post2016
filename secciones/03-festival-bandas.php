@@ -1,5 +1,3 @@
-<h2>Bandas</h2>
-
 <section id="festival2016-bandas" class="columns h-80-v  p-0">
    <?php
    $q = new WP_Query(
@@ -17,21 +15,17 @@
 
          ?>
 
-         <article id="festival2016-banda-<?php echo get_the_ID(); ?>" class="banda columns medium-6 large-3 h-20-v end rel imgfx1 p-0">
+         <article id="festival2016-banda-<?php echo get_the_ID(); ?>" class="banda columns small-6 medium-3 h-20-v h-10-sm-v end rel hover-grow p-0-3">
 
-            <!-- <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100 p-0"> -->
+            <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100">
 
-               <div class="imagen columns imgLiquidFill imgLiquid abs wh-100" >
-                  <?php echo get_lazyload_thumbnail( get_the_ID(), 'large' ); ?>
-               </div>
+               <div class="imagen columns imgLiquidNoFill imgLiquid wh-100 " >
 
-               <div class="titulo columns h-100 abs z1 v-center text-center white font-xl font2 txsh1">
-
-                     <?php echo get_the_title(); ?>
+                  <?php echo get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
 
                </div>
 
-            <!-- </a> -->
+            </a>
 
          </article>
 

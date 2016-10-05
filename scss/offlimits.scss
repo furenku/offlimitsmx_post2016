@@ -1,5 +1,22 @@
 @debug "compilando estilos Off Limits...";
 
+
+// utilidades
+
+.hover-grow {
+   &:hover {
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      transform: scale(1.02);
+   }
+}
+
+.fade-in-slow {
+   transition: opacity 2s ease-in-out;
+}
+
 // personalización del plugin Recent Facebook Posts
 
 .recent-facebook-posts {
@@ -11,5 +28,93 @@
 iframe {
    width: 100%;
 }
+
+
+
+
+.imgfx1 {
+   -webkit-filter: grayscale( 75% );
+   -moz-filter: grayscale( 75% );
+   -ms-filter: grayscale( 75% );
+   -o-filter: grayscale( 75% );
+   filter: grayscale( 75% );
+
+   -webkit-transition: -webkit-filter 400ms linear;
+   -moz-transition:-moz-filter 400ms linear;
+   -moz-transition:  filter 400ms linear;
+   -ms-transition:  -ms-filter 400ms linear;
+   -o-transition: -o-filter 400ms linear;
+   transition:  filter 400ms linear;
+
+   &:hover {
+      -webkit-filter: grayscale( 0% );
+      -moz-filter: grayscale( 0% );
+      -ms-filter: grayscale( 0% );
+      -o-filter: grayscale( 0% );
+      filter: grayscale( 0% );
+   }
+}
+
+
+/* FACEBOOK */
+
+.rfbp-post {
+   background-color: #222;
+   color: #fff;
+   @extend .font-xs;
+   @extend .p-1;
+
+   .rfbp-heading {
+      @extend .font-xs;
+   }
+
+   .rfbp-image-wrap {
+      @extend .w-100;
+      text-align: center;
+   }
+
+
+   .rfbp-image-link,
+   .rfbp-image {
+      @extend .h-15-v;
+   }
+
+   .rfbp-text {
+      p {
+         margin-bottom: 0;
+      }
+   }
+
+   .rfbp-post-link-wrap {
+      @extend .w-100;
+      clear: both;
+      background-color: #fff;
+      @extend .p-0-2;
+      text-align: center;
+   }
+
+   a {
+      color: #fa0;
+   }
+}
+
+
+/** SLIDER */
+
+
+.slick-next,
+.slick-prev {
+   &:before {
+      @extend .font-xxl;
+      z-index: 10001;
+   }
+}
+.slick-prev {
+   @extend .m-l-2;
+}
+.slick-next {
+   @extend .m-r-3;
+}
+
 
 @debug "estilos Off Limits listos!";
