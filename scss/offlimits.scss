@@ -75,17 +75,33 @@ $step: 75px;
 
 [type=submit],
 input, textarea {
-   background-color: #333 !important;
+   background-color: #1a1a1a !important;
    color: white !important;
    border: none !important;
    padding: 8px;
 }
 
+textarea {
+   height: 4em !important;
+}
 
 .fotolinea {
    min-height: 35vh;
-   opacity: 0.3;
+   filter: brightness(50%) contrast(110%);
 
+}
+
+.texto {
+   &, * {
+      @extend .font2;
+      @extend .font-xs-m;
+      @extend .font-md-l;
+      line-height: 1.5;
+   }
+}
+
+p {
+   margin-bottom: 0.75em;
 }
 
 @debug "Off Limits: SASS listo";

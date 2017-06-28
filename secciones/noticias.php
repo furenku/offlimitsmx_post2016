@@ -1,4 +1,4 @@
-<section id="noticias" class="columns small-centered medium-10 large-8 p-2 m-t-1 m-b-1 rel">
+<section id="noticias" class="columns small-centered medium-10 large-8 p-5 m-t-2 m-b-2 rel">
 
 <?php
 
@@ -14,21 +14,23 @@ if( $q-> have_posts() ) :
 
       <article id="noticias-principal" class="columns medium-6 h-5x">
 
-         <h3 class="m-b-1">
+         <h5 class="m-b-1">
             <?php echo get_the_title(); ?>
-         </h3>
+         </h5>
 
          <div class="imagen columns small-6 h-3x medium-6 imgLiquid imgLiquidNoFill">
             <?php echo get_the_post_thumbnail(); ?>
          </div>
 
-         <div class="extracto small-6 h-3x columns h-a">
+         <div class="extracto-enlace small-6 h-3x columns h-a rel">
+         <div class="extracto columns p-0 h-a">
             <?php echo get_the_excerpt(); ?>
          </div>
-
-         <a class="button columns h-a m-t-1 text-right" href="<?php echo get_the_permalink(get_the_ID()); ?>">
+         <a class="button columns absDownR h-a m-t-1 m-b-0 text-right color-black-bg" href="<?php echo get_the_permalink(get_the_ID()); ?>">
             Ver más
          </a>
+         </div>
+
 
       </article>
 
@@ -40,6 +42,6 @@ endif;
 </section>
 
 
-<section class="columns fotolinea imgLiquid imgLiquidNoFill ">
+<section class="columns fotolinea h-50-v imgLiquid imgLiquidFill m-t-3 m-b-3">
    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fotosfondos/horizontal05.jpg" alt="">
 </section>

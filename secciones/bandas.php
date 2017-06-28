@@ -1,9 +1,5 @@
-<section id="bandas" class="columns medium-10 medium-offset-1 large-8 large-offset-2 end h-a p-2 p-md-3 p-lg-4 m-b-3">
-
-   <h4 class="text-center">
-      Cartel 2016
-   </h4>
-
+<section id="bandas" class="columns h-a p-2 p-md-3 p-lg-4 m-t-4 m-b-4 color-black-bg">
+<div class=" medium-10 medium-offset-1 large-8 large-offset-2 end ">
    <?php
    $q = new WP_Query(
       array(
@@ -20,7 +16,7 @@
 
          ?>
 
-         <article id="festival2017-banda-<?php echo get_the_ID(); ?>" class="banda columns small-6 medium-4 h-20-v h-10-sm-v end rel hover-grow p-0-3">
+         <article id="festival2017-banda-<?php echo get_the_ID(); ?>" class="banda columns small-6 medium-4 h-25-v h-15-sm-v end rel hover-grow p-xs-0-3 p-1-2">
 
             <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100">
 
@@ -41,7 +37,7 @@
 
    ?>
 
-
+</div>
 </section>
 
 <section class="columns fotolinea imgLiquid imgLiquidFill ">

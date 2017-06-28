@@ -45,8 +45,8 @@
 
                <?php foreach( $paginas as $pagina ) : ?>
 
-                  <li data-id="<? echo $pagina->ID; ?>">
-                     <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                  <li class="columns small-2 h-10-v font-ml font3 v-center text-center" data-id="<? echo $pagina->ID; ?>">
+                     <a class="w-100" href="<?php echo get_the_permalink(get_the_ID()); ?>">
                         <?php echo apply_filters('the_title', $pagina->post_title); ?>
                      </a>
                   </li>

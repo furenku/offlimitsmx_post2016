@@ -9,7 +9,9 @@ array(
 );
 ?>
 
-<section id="festival2016-videos" class="columns row h-60-v h-md-50 p-0 m-t-2">
+<h1 class="text-center m-t-2">Videos</h1>
+
+<section id="festival2016-videos" class="columns row h-60-sm-v h-40-md-v h-md-50 p-sm-2 p-md-4">
 
 
       <?php
@@ -24,9 +26,9 @@ array(
 
                <!-- <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100 p-0"> -->
 
-                  <h6 class="titulo columns h-30 text-center white font-xs-s font-md-m font2 txsh1 m-b-0">
+                  <h5 class="titulo columns h-30 text-center white font2 txsh1 m-b-0">
                      <?php echo get_the_title(); ?>
-                  </h6>
+                  </h5>
 
                   <div class="contenido columns h-70 text-center white font-xl font2 txsh1">
                      <?php echo get_the_content(); ?>

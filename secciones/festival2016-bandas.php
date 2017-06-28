@@ -1,8 +1,5 @@
-<section id="festival2016-bandas" class="columns medium-6 large-4 medium-centered h-a p-2 p-md-3 p-lg-4 m-b-3">
+<section id="festival2016-bandas" class="columns">
 
-   <h4 class="text-center">
-      Cartel 2016
-   </h4>
 
    <?php
    $q = new WP_Query(
@@ -20,7 +17,7 @@
 
          ?>
 
-         <article id="festival2016-banda-<?php echo get_the_ID(); ?>" class="banda columns small-3 h-20-v h-10-sm-v end rel hover-grow p-0-3">
+         <article id="festival2016-banda-<?php echo get_the_ID(); ?>" class="banda columns small-3 h-15-v h-10-sm-v end rel hover-grow p-xs-0-2">
 
             <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="wh-100">
 
