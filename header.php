@@ -16,29 +16,46 @@
    <?php wp_head(); ?>
 
 </head>
-<body class="color-neutral_oscuro-bg color-blanco">
+<body class="">
 
-   <div id="contenedor-sitio" class="row expanded h-a m-0 p-0">
+<!--  meta tags -->
 
-   <!--  meta tags -->
-
-   <header class="row expanded h-10-v m-0 p-0" data-sticky-container>
+   <header id="cabecera" class="row expanded h-10-v m-0 p-0" data-sticky-container>
 
 
       <div class="sticky columns h-10-v color-black-bg " data-sticky data-anchor="contenedor-sitio" data-margin-top="0" data-sticky-on="small">
 
-         <div class="logotipo columns small-4 medium-3 large-2 p-0-2">
+         <a class="logotipo h-100" href="<?php echo get_site_url(); ?>">
             <div class="imagen imgLiquid imgLiquidNoFill">
-
-               <img
-               data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-300w-2x.png" alt=""
-               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               class="b-lazy"
-               />
-
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-300w-2x.png" alt="Off Limits Logo"/>
             </div>
+         </a>
 
-         </div>
+         <nav id="menu-sitio">
+            <ul>
+
+               <?php
+               $paginas = get_pages(
+                  array(
+                     'parent' => get_page_by_title('2017')->ID,
+                     'sort_column' => 'menu_order'
+                  )
+               );
+               ?>
+
+               <?php foreach( $paginas as $pagina ) : ?>
+
+                  <li data-id="<? echo $pagina->ID; ?>">
+                     <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                        <?php echo apply_filters('the_title', $pagina->post_title); ?>
+                     </a>
+                  </li>
+
+               <?php endforeach; ?>
+
+            </ul>
+         </nav>
+
      </div>
 
 

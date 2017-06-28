@@ -2,13 +2,22 @@
 
    <?php
 
-      get_template_part('secciones/00-portada');
+      get_template_part('secciones/portada');
 
-      get_template_part('secciones/01-introduccion-facebook');
+      get_template_part('secciones/noticias');
 
-      get_template_part('secciones/02-festival2016');
+      get_template_part('secciones/festival');
 
-      get_template_part('secciones/06-blog');
+      get_template_part('secciones/bandas');
+
+      get_template_part('secciones/festival2016');
+
+      get_template_part('secciones/contacto');
+
+      get_template_part('secciones/facebook');
+
+      // get_template_part('secciones/blog');
+
 
    ?>
 

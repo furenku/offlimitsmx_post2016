@@ -1,0 +1,121 @@
+
+
+.rfbp-post {
+
+   @extend .columns;
+   @extend .rel;
+
+   border-bottom: none !important;
+   outline-bottom: none !important;
+
+   img {
+      max-height: 35vh !important;
+   }
+   // @media screen and (max-width:960px) {
+   //    width:40%;
+   //    &:nth-child(even) {
+   //       margin-left: 5%;
+   //    }
+   //    &:nth-child(odd) {
+   //       margin-left: 10%;
+   //    }
+   //
+   // }
+   // @media screen and (min-width:960px) and (max-width:1199px) {
+   //    width:40%;
+   //    &:nth-child(even) {
+   //       margin-left: 5%;
+   //    }
+   //    &:nth-child(odd) {
+   //       margin-left: 10%;
+   //    }
+   //
+   // }
+   // @media screen and (min-width:1200px) {
+   //    width:25%;
+   //    margin-left: 2.111%;
+   //    &:nth-child(3n+3) {
+   //       margin-right: 2.111%;
+   //    }
+   //    &:nth-child(3n+1) {
+   //       margin-left: 0%;
+   //    }
+   //
+   // }
+   // @extend .large-4;
+   // @extend .h-4x;
+   height: auto !important;
+   @extend .p-0-2;
+
+   @extend .end;
+   // @extend .m-b-2;
+   // height: auto !important;
+   background-color: #1a1a1a;
+
+   color: #aaa;
+
+   @extend .font2;
+
+   div {
+      height: auto;
+      @extend .columns;
+   }
+
+
+   // @extend .font-s;
+   @extend .p-1;
+
+   .rfbp-heading {
+      // @extend .font-m;
+      display: none;
+      width: 100% !important;
+      float: left;
+   }
+
+   .rfbp-image-wrap {
+      @extend .w-100;
+      height: auto;
+      text-align: center;
+      @extend .m-b-2;
+   }
+
+
+   // .rfbp-image-link,
+   // .rfbp-image {
+   //    @extend .h-25-v;
+   // }
+
+   .rfbp-text {
+      float: left;
+      width: 100% !important;
+      p {
+         margin-bottom: 0;
+         @extend .font-s;
+         @extend .font2;
+         color: #aaa;
+      }
+   }
+
+   .rfbp-post-link-wrap {
+      @extend .w-100;
+      @extend .absDownR;
+      clear: both;
+      background-color: #141414;
+      @extend .p-0-2;
+      text-align: center;
+      border: none !important
+   }
+
+   a, .rfbp-comment-count, .rfbp-like-count {
+      background-color: #141414 !important;
+      color: #fa0 !important;
+
+   }
+
+   * {
+      border: none !important;
+   }
+}
+
+
+@debug 'Off Limits - facebook'

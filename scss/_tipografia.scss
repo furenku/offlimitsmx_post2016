@@ -1,0 +1,25 @@
+
+.font1,
+div,li,p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+.font2,
+h2,h3,h4,h5,h6,.copy {
+  font-family: 'Special Elite', cursive;
+}
+
+.font3,
+button, .button div, .button,
+h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.font4 {
+
+  font-family: 'Averia Serif Libre', cursive;
+
+}
+
+@debug "Off Limits: Tipografía";

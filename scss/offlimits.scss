@@ -1,34 +1,22 @@
-@debug "compilando estilos Off Limits...";
+@import "header";
+@import "colores";
+@import "tipografia";
+@import "facebook";
 
 
-// utilidades
 
-.hover-grow {
-   &:hover {
-      -webkit-transform: scale(1.02);
-      -moz-transform: scale(1.02);
-      -ms-transform: scale(1.02);
-      -o-transform: scale(1.02);
-      transform: scale(1.02);
-   }
-}
-
-.fade-in-slow {
-   transition: opacity 2s ease-in-out;
-}
 
 // personalización del plugin Recent Facebook Posts
-
-.recent-facebook-posts {
-   div {
-      height: auto !important;
-   }
-}
 
 iframe {
    width: 100%;
 }
 
+
+body {
+   background-color: #0a0a0a;
+   color: #fff;
+}
 
 
 
@@ -56,49 +44,6 @@ iframe {
 }
 
 
-/* FACEBOOK */
-
-.rfbp-post {
-   background-color: #222;
-   color: #fff;
-   @extend .font-xs;
-   @extend .p-1;
-
-   .rfbp-heading {
-      @extend .font-xs;
-   }
-
-   .rfbp-image-wrap {
-      @extend .w-100;
-      text-align: center;
-   }
-
-
-   .rfbp-image-link,
-   .rfbp-image {
-      @extend .h-15-v;
-   }
-
-   .rfbp-text {
-      p {
-         margin-bottom: 0;
-      }
-   }
-
-   .rfbp-post-link-wrap {
-      @extend .w-100;
-      clear: both;
-      background-color: #fff;
-      @extend .p-0-2;
-      text-align: center;
-   }
-
-   a {
-      color: #fa0;
-   }
-}
-
-
 /** SLIDER */
 
 
@@ -117,4 +62,30 @@ iframe {
 }
 
 
-@debug "estilos Off Limits listos!";
+$class-slug: h;
+$step: 75px;
+
+
+@for $i from 1 through 8 {
+   .#{$class-slug}-#{$i}x {
+      height: $step * $i;
+   }
+}
+
+
+[type=submit],
+input, textarea {
+   background-color: #333 !important;
+   color: white !important;
+   border: none !important;
+   padding: 8px;
+}
+
+
+.fotolinea {
+   min-height: 35vh;
+   opacity: 0.3;
+
+}
+
+@debug "Off Limits: SASS listo";

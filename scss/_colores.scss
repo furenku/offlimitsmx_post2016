@@ -1,0 +1,7 @@
+$highlightColor: #d24442;
+a {
+   // @extend .color-black-bg;
+   color: $highlightColor;
+}
+
+@debug "colores";

@@ -1,7 +1,7 @@
 <?php
 $blog = get_page_by_title("Blog");
 ?>
-<section id="blog" class="small-12 columns p0 h_100 mb3 mt2 mt_sm_4">
+<section id="blog" class="columns p0 h_100 mb3 mt2 mt_sm_4">
 
   <!-- header secciones home -->
   <div id="blog-header" class="small-12 columns p0 h_10vh mb_sm_2 mb2">

@@ -53,7 +53,7 @@ function setup_plugins() {
    $('.imgLiquid.imgLiquidNoFill').imgLiquid({ fill: false });
 
 
-   $('#festival2016-videos-listado').slick({
+   $('#festival2016-videos').slick({
       slidesToShow:1,
       slidesToScroll:1,
       dots:true,
