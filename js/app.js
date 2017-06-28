@@ -77,10 +77,17 @@ function setup_plugins() {
 
 
    $('#festival2016-videos').slick({
-      slidesToShow:1,
-      slidesToScroll:1,
+      slidesToShow:6,
+      slidesToScroll:6,
       dots:true,
       responsive: [
+         {
+            breakpoint: 0,
+            settings: {
+               slidesToShow:1,
+               slidesToScroll:1,
+            }
+         },
          {
             breakpoint: 768,
             settings: {
