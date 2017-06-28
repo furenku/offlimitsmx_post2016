@@ -13,6 +13,29 @@ jQuery(document).ready(function($){
    setup_utils();
    setup_plugins();
 
+   $('#menu-sitio ul li a').click(function(){
+      li = $(this).parent()
+      id = li.data('id')
+
+      // u.scrollTo( $('section[data-id="'+id+'"]'), $(window) )
+
+      $('body,html').animate({
+         scrollTop: $('section[data-id="'+id+'"]').offset().top - $('#cabecera').outerHeight() + 1
+      })
+
+      return false
+
+   })
+
+   if( $('#cover').length>0) {
+      setTimeout(function(){
+         $('#cover').addClass('op0')
+         setTimeout(function(){
+            $('#cover').remove()
+         }, 3000 )
+      }, 500 )
+   }
+
    console.log("OFF Limits v.3");
 
 });

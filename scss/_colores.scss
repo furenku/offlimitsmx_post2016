@@ -1,7 +1,10 @@
 $highlightColor: #d24442;
+$highlightColor2: #fa0;
 a {
    // @extend .color-black-bg;
    color: $highlightColor;
 }
-
+a:focus, a:hover {
+   color: $highlightColor2;
+}
 @debug "colores";

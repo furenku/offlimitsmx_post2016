@@ -1,4 +1,4 @@
-<section id="bandas" class="columns h-a p-2 p-md-3 p-lg-4 m-t-4 m-b-4 color-black-bg">
+<section id="bandas" class="columns h-a p-2 p-md-3 p-lg-4 m-t-4 m-b-4 color-black-bg" data-id="<?php echo get_page_by_title("Bandas")->ID; ?>">
 <div class=" medium-10 medium-offset-1 large-8 large-offset-2 end ">
    <?php
    $q = new WP_Query(

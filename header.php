@@ -19,6 +19,10 @@
 <body class="">
 
 <!--  meta tags -->
+   <?php $cover = get_page_by_title("Cover"); ?>
+   <div id="cover" class="row expanded fixed w-100-v h-100-v z1 imgLiquid imgLiquidFill">
+      <?php echo get_the_post_thumbnail($cover->ID,'full'); ?>
+   </div>
 
    <header id="cabecera" class="row expanded h-10-v m-0 p-0" data-sticky-container>
 
@@ -46,7 +50,8 @@
                <?php foreach( $paginas as $pagina ) : ?>
 
                   <li class="columns small-2 h-10-v font-ml font3 v-center text-center" data-id="<? echo $pagina->ID; ?>">
-                     <a class="w-100" href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                     <!-- <a class="w-100" href="<?php echo get_the_permalink(get_the_ID()); ?>"> -->
+                     <a class="w-100" href="#">
                         <?php echo apply_filters('the_title', $pagina->post_title); ?>
                      </a>
                   </li>

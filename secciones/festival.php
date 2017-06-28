@@ -4,7 +4,7 @@ $pages = get_pages( array('parent'=>get_page_by_title("Festival")->ID));
 
 ?>
 
-<section id="festival" class="columns row text-center">
+<section id="festival" class="columns text-center" data-id="<?php echo get_page_by_title("Festival")->ID; ?>">
 
    <div class="logo columns text-center h-15-v imgLiquid imgLiquidNoFill">
       <img

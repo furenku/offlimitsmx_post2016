@@ -1,4 +1,4 @@
-<section id="noticias" class="columns small-centered medium-10 large-8 p-5 m-t-2 m-b-2 rel">
+<section id="noticias" class="columns small-centered medium-10 large-8 p-3 m-t-2 m-b-2 rel" data-id="<?php echo get_page_by_title("Noticias")->ID; ?>">
 
 <?php
 
@@ -12,7 +12,7 @@ if( $q-> have_posts() ) :
 
       ?>
 
-      <article id="noticias-principal" class="columns medium-6 h-5x">
+      <article id="noticias-principal" class="columns medium-6 h-5x p-2">
 
          <h5 class="m-b-1">
             <?php echo get_the_title(); ?>

@@ -1,6 +1,6 @@
 <?php $page = get_page_by_title("Contacto"); ?>
 
-<section id="contacto" class="columns h-a p-2 p-md-3 p-lg-4 m-b-3 rel ">
+<section id="contacto" class="columns h-a p-2 p-md-3 p-lg-4 m-b-3 rel " data-id="<?php echo $page->ID; ?>">
 
    <!-- <h1 class="text-center">
       <?php echo apply_filters('the_title',$page->post_title); ?>

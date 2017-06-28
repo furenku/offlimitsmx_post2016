@@ -25,7 +25,7 @@ $principal = get_page_by_title("2017");
 
 </section>
 
-<section id="introduccion" class="row h-sm-a h-60-md-v p-5 rel">
+<section id="introduccion" class="row expanded h-sm-a h-60-md-v p-5 rel">
    <!-- <section class="columns fotolinea h-50-v absUpL imgLiquid imgLiquidFill z-1">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fotosfondos/horizontal04.jpg" alt="">
    </section> -->
@@ -39,6 +39,6 @@ $principal = get_page_by_title("2017");
 
 </section>
 
-<section class="columns fotolinea h-50-v m-b-2 imgLiquid imgLiquidFill z-1">
+<section class="row expanded fotolinea h-50-v m-b-2 imgLiquid imgLiquidFill z-1">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fotosfondos/horizontal04.jpg" alt="">
 </section>

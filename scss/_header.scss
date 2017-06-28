@@ -1,11 +1,14 @@
 header#cabecera {
-
-   a {
+   li {
+      @extend .text-center;
+   }
+   .logotipo {
       @extend .columns;
       @extend .small-4;
       @extend .medium-3;
       @extend .large-2;
       @extend .p-0-2;
+      @extend .text-center;
    }
 
 }

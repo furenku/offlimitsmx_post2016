@@ -1,6 +1,6 @@
 <?php $page = get_page_by_title("Edición 2016"); ?>
 
-<section id="edicion_anterior" class="columns h-a p-xs-2 p-sm-3 p-md-4 font-s  color-black-bg">
+<section id="edicion_anterior" class="columns h-a p-xs-2 p-sm-3 p-md-4 font-s  color-black-bg" data-id="<?php echo $page->ID; ?>">
 
    <h1 class="text-center">
       <?php echo apply_filters('the_title',$page->post_title); ?>
