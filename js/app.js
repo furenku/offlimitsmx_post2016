@@ -17,6 +17,7 @@ jQuery(document).ready(function($){
       li = $(this).parent()
       id = li.data('id')
 
+      console.log("scroll to:", id);
       // u.scrollTo( $('section[data-id="'+id+'"]'), $(window) )
 
       $('body,html').animate({
